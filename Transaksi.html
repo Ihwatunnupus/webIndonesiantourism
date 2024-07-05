@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Tourism</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4acdd6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2f4f4f;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #d3c15e;
+            color: white;
+        }
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        main h2 {
+            color: #2f4f4f;
+            margin-bottom: 20px;
+        }
+        main p {
+            color: #696969;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        main img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Indonesian Tourism</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="culture.html">Kebudayaan</a>
+        <a href="tempatwisata.html">Tempat wisata</a>
+        <a href="hotel.html">Hotel </a>
+        <a href="Transaksi.html">Transaksi</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <main>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Formulir Transaksi Pariwisata Indonesia</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    line-height: 1.6;
+                    margin: 20px;
+                }
+                form {
+                    max-width: 600px;
+                    margin: auto;
+                    padding: 20px;
+                    background: #f9f9f9;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"],
+                textarea,
+                select {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                button {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    float: right;
+                }
+                button:hover {
+                    background-color: #45a049;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Formulir Transaksi Pariwisata Indonesia</h2>
+            <form action="/proses_transaksi.php" method="post">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="telepon">Nomor Telepon:</label>
+                <input type="tel" id="telepon" name="telepon">
+        
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" rows="4" required></textarea>
+        
+                <label for="jenis_wisata">Jenis Wisata:</label>
+                <select id="jenis_wisata" name="jenis_wisata" required>
+                    <option value="">Pilih Jenis Wisata</option>
+                    <option value="Derawan Kalimantan Timur">Derawan Kalimantan Timur</option>
+                    <option value="Gunung Ijen, Jawa Timur">Gunung Ijen, Jawa Timur</option>
+                    <option value="Daerah Istimewa Yogyakarta">Daerah Istimewa Yogyakarta</option>
+                    <option value=" Bukittinggi, Sumatera Bara"> Bukittinggi, Sumatera Bara</option>
+                    <option value=" Nias, Sumatera Utara"> Nias, Sumatera Utara</option>
+                </select>
+                <label for="jenis_hotel">jenis hotel:</label>
+                <select id="jenis_hotel" name="jenis_hotel" required>
+                    <option value="">Pilih jenis hotel</option>
+                    <option value="Hotel Indonesia Kempinski Jakarta">Hotel Indonesia Kempinski Jakarta</option>
+                    <option value="Ayana Resort and Spa Bali">Ayana Resort and Spa Bali </option>
+                    <option value="Melia Makassar">Melia Makassar</option>
+                    <option value="Padma Hotel Bandung">Padma Hotel Bandung</option>
+                    <option value="Plataran Borobudur Resort & Spa">Plataran Borobudur Resort & Spa</option>
+                </select>
+                <label for="jumlah_orang">Jumlah Orang:</label>
+                <input type="number" id="jumlah_orang" name="jumlah_orang" min="1" required>
+        
+                <label for="tanggal_mulai">Tanggal Mulai:</label>
+                <input type="date" id="tanggal_mulai" name="tanggal_mulai" required>
+        
+                <label for="durasi">Durasi (hari):</label>
+                <input type="number" id="durasi" name="durasi" min="1" required>
+        
+                <label for="metode_pembayaran">Metode Pembayaran:</label>
+                <select id="metode_pembayaran" name="metode_pembayaran" required>
+                    <option value="">Pilih Metode Pembayaran</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="Kartu Kredit">Kartu Kredit</option>
+                    <option value="E-Wallet">E-Wallet</option>
+                </select>
+        
+                <label for="pesan_tambahan">Pesan Tambahan:</label>
+                <textarea id="pesan_tambahan" name="pesan_tambahan" rows="4"></textarea>
+        
+                <button type="submit">Proses Transaksi</button>
+            </form> 
+    </main>
+</body>
+</html>
